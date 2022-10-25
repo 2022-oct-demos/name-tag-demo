@@ -9,6 +9,7 @@ updateBtn.addEventListener('click', () => {
     console.log('i clicked this button');
     const nameInput = document.getElementById('name-input');
     nameDisplay.textContent = nameInput.value;
+    nameInput.value = '';
 });
 
 const colorDropdown = document.getElementById('color-dropdown');
@@ -16,9 +17,11 @@ colorDropdown.addEventListener('change', () => {
     console.log('CHANGE IS HAPPENING!!');
     console.log(colorDropdown.value);
 
-    const nameTagSection = document.getElementById('name-tag-section');
-    nameTagSection.classList.remove('red');
-    nameTagSection.classList.remove('blue');
-    nameTagSection.classList.remove('green');
-    nameTagSection.classList.add(colorDropdown.value);
+    nameDisplay.classList.remove('red');
+    nameDisplay.classList.remove('blue');
+    nameDisplay.classList.remove('green');
+    nameDisplay.classList.add(colorDropdown.value);
 });
+
+const nameTagSection = document.getElementById('name-tag-section');
+nameTagSection.classList.add('red');
