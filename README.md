@@ -25,3 +25,31 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+![](./assets/wireframes.png)
+
+# State
+
+1.) display name
+2.) color of the name tag
+
+# Events
+
+1.) input field
+2.) button to submit name tag
+3.) selector - color dropdown
+
+# HTML
+
+```
+<section>
+- <h1>Hello, my name is </h1>
+- <input />
+- <button></button>
+- <select></select>
+</section>
+<section>
+- <h1>Hello, my name is </h1>
+- <p>NAME</p>
+</section>
+```
